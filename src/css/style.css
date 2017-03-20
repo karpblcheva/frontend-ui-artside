@@ -2,16 +2,12 @@ html {
     height: 100%;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-}
-
 body {
-    background-attachment: scroll;
-    background-image: url(../../psd/bg-body.jpg);
+    background-image: url(../images/bg-body.jpg);
     background-repeat: repeat;
-    font: 12px/18px/30px/40px Verdana, Arial, sans-serif;
-    width: 100%;
+    font: 11px Verdana, Tahoma, sans-serif;
+    color: #363636;
+    /*    width: 100%;*/
     min-width: 1024px;
     height: 100%;
 }
@@ -69,7 +65,7 @@ body {
 
 .middle {
     width: 100%;
-    padding: 0 0 150px;
+    /*    padding: 0 0 150px;*/
     position: relative;
 }
 
@@ -87,31 +83,21 @@ body {
 
 .content {
     padding: 0 0 0 250px;
-    color: #363636;
-    font-family: Verdana;
-    font-size: 11px;
 }
 
-.title {
-    font-family: DINCyr;
+h1, h2 {
+    /*    font-family: DINCyr;*/
     font-size: 18px;
     font-weight: 400;
-    margin: 0 0 20px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .article p {
     margin: 0;
-    padding-top: 14px;
 }
 
-article:nth-child(n+2) {
-    padding-top: 24px;
-}
-
-.people {
-    margin: 46px 0 22px;
-}
+.people {}
 
 .dept {
     display: inline-block;
@@ -124,9 +110,12 @@ article:nth-child(n+2) {
     height: 78px;
 }
 
+
+/*
 .dept li:nth-child(n+2) {
     margin-top: 20px;
 }
+*/
 
 .name {
     padding-left: 12px;
@@ -147,23 +136,19 @@ ul {
     position: absolute;
     height: 100%;
     width: 250px;
-    /*    background: #B5E3FF;*/
+    background: #B5E3FF;
 }
 
 .menu-list {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    line-height: 0.94;
+    line-height: 1.1;
 }
 
 .mainmenu .menu-item a {
-    height: 100%;
-    color: #363636;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: DINCyr;
+    /*    font-family: DINCyr;*/
     font-size: 40px;
+    color: #363636;
 }
 
 .mainmenu .menu-item.active a {
@@ -177,35 +162,28 @@ ul {
 
 .footer {
     width: 1000px;
-    margin: -150px auto 0;
-    height: 150px;
-    /*	background: #BFF08E;*/
+    margin: 0 auto;
+    height: 100px;
+    background: #BFF08E;
     position: relative;
     color: #707070;
+    border: 1px;
+    border-top: 1px rgba(112, 112, 112, 0.47);
 }
 
 .footer span {
     position: absolute;
-    top: 96px;
+    top: 40px;
     font-family: Tahoma;
-    font-size: 11px;
 }
 
 .footer a {
     position: absolute;
-    top: 96px;
+    top: 40px;
     left: 120px;
     color: #707070;
     font-family: Tahoma;
-    font-size: 11px;    text-transform: lowercase;
+    font-size: 11px;
+    text-transform: lowercase;
     margin-left: 20px;
-}
-
-.footer hr {
-    border: none;
-    background-color: rgba(112, 112, 112, 0.47);
-    height: 1px;
-    width: 1000px;
-    position: absolute;
-    top: 50px;
 }
